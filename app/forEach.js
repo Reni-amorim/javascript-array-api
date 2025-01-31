@@ -1,6 +1,7 @@
 const eInserirLivros = document.getElementById('livros')
 
 function exibirLivros (listaLivros) {
+  eInserirLivros.innerHTML = ''  // Limpa a lista anterior para evitar duplicidade de livros
     listaLivros.forEach(livro => {
         eInserirLivros.innerHTML += `
         <div class="livro">
