@@ -1,6 +1,9 @@
 const eInserirLivros = document.getElementById('livros')
+const eValorTotal = document.getElementById('valor_total_livros_disponiveis')
+
 
 function exibirLivros (listaLivros) {
+  eValorTotal.innerHTML = ''
   eInserirLivros.innerHTML = ''  // Limpa a lista anterior para evitar duplicidade de livros
     listaLivros.forEach(livro => {
         // let disponibilidade = verificarDisponibilidade(livro)
